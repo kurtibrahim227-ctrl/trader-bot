@@ -40,7 +40,7 @@ def send_telegram(message):
 
 def get_binance_klines(symbol, interval, limit=100):
     """Binance'den mum verisi çek"""
-    url = "https://fapi.binance.com/fapi/v1/klines"
+    url = "https://api.binance.com/api/v3/klines"
     params = {
         "symbol": symbol,
         "interval": interval,
