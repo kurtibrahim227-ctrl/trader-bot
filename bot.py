@@ -1,3 +1,4 @@
+import os
 import requests
 import pandas as pd
 import numpy as np
@@ -7,8 +8,9 @@ import pytz
 import yfinance as yf
  
 # === KONFİGÜRASYON ===
-TELEGRAM_TOKEN = "8600853087:AAFLY8Y-0zrKk8g6qCej6XkjwpVpvkkiKKw"
-CHAT_ID = 1885325032
+import os
+TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
+CHAT_ID = int(os.environ.get("CHAT_ID", "1885325032"))
 TZ = pytz.timezone('Europe/Istanbul')
  
 SYMBOLS = {
