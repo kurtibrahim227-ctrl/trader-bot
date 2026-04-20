@@ -8,8 +8,7 @@ import pytz
 import yfinance as yf
  
 # === KONFİGÜRASYON ===
-import os
-TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
+TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN", "8667342978:AAE-1qoJY3nRHaelNqEbgDeV9j2pcLFgD10")
 CHAT_ID = int(os.environ.get("CHAT_ID", "1885325032"))
 TZ = pytz.timezone('Europe/Istanbul')
  
